@@ -32,3 +32,15 @@ def ne(model, df, probabilities_col='probability'):
     p = df.select(F.mean('label')).first()[0]
     ll_baseline =  -(p * np.log(p) + (1 - p) * np.log(1 - p))
     return ll / ll_baseline
+
+
+def calibration(model, df, prediction_col='prediction'): 
+    estimated_ctr = model \
+        .transform(df) \
+        .agg(F.mean(prediction_col)) \
+        .first()[0]
+
+    empirical_ctr = df.agg(F.mean('label')).first()[0]
+    if empirical_ctr == 0.0:
+        raise ValueError("The calibration is undefined when empirical_ctr is 0.")
+    return abs(estimated_ctr - empirical_ctr) / empirical_ctr
