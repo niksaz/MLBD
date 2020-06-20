@@ -34,7 +34,8 @@ Materials for "Machine Learning on Big Data" course
 > <ins><i>Keywords:</i></ins> Quantization, Knowledge Distillation, Pruning (one-shot, iterative, Lottery Ticket Hypothesis), Deep Compression, DeepGBM
 #### 6. [Recommender Systems](/recsys)
 >  <ins><i>Keywords:</i></ins> Simple RS (Item/User-based, Content based), Ranking Metrics, Matrix Factorization (SVD, PMF, ALS, iALS, Incremental ALS, Neural CF), Large Scale RS (MF with Distributed SGD, PytorchBigGraph, GraphVite), Ranking losses (BPR, WARP)
-#### 7. Similar Objects Search
+#### 7. [Nearest Neighbors Search](/nearest_neighbor_search)
+>  <ins><i>Keywords:</i></ins> Exact-kNN, Approximate NN (eps-NN), (Hierarchical) Navigatable Small World, LSH (random projections, minhash), Learning to Hash (Deep Supervised Hashing), Annoy, FAISS, ANN-benchmarks and evaluation
 #### 8. Latent Dirichlet Allocation
 #### 9. Dimensionality Reduction
 #### 10. Online Learning
@@ -46,7 +47,8 @@ Materials for "Machine Learning on Big Data" course
 <details>
   <summary>Список тем</summary>
 
-#### 1. How to conduct AB Tests (Experiment Design, Execution, Analysis)
+#### 1. [How to conduct AB Tests (Experiment Design, Execution, Analysis)](/controlled_experiments)
+>  <ins><i>Keywords:</i></ins> Offline Evaluation (hypothesis testing, 5x2 cv test, testing over multiple datasets), Online Evaluation
 #### 2. Results Analysis ((Multiple) Hypothesis testing, Sensitivity, Power)
 #### 3. Heterogeneous Treatment Effect
 
